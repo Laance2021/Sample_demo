@@ -1,40 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo Sample</title>
+    <title>Bizconnect 3d Projects Showcase</title>
+    <link rel="icon" href="./assets/logo.png" />
     <style>
-        *{
+        * {
             box-sizing: border-box;
         }
 
-        html,body{
+        html,
+        body {
             margin: 0;
             padding: 0;
-            height: 100vh;
             width: 100%;
-            overflow: hidden;
         }
 
-        .sketchfab-embed-wrapper {
-            position: relative;
-            height: 100%;
-            width: 100%;
+        .navbar-shadow {
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+            border-bottom: 1px solid #efefef;
+        }
+        .truncate-lines-3{
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;  
             overflow: hidden;
         }
-
-        .sketchfab-embed-wrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
+        
     </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    <div class="sketchfab-embed-wrapper"> <iframe title="SM AirSeT: Critical & Industrial Facilities" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/c72c29da2bad454d9fecdb17cb54137a/embed?ui_infos=0&ui_watermark_link=0&ui_watermark=0"> </iframe> </div>
+    <nav class="flex justify-center items-center gap-3 py-2 bg-white w-full navbar-shadow">
+        <img src="./assets/logo.png" alt="Bizconnect Logo" class="w-[100px]" />
+        <h4 class="text-2xl text-center font-bold text-gray-800">
+            Bizconnect 3d Projects Showcase
+        </h4>
+    </nav>
+
+    <div class="flex flex-wrap justify-center gap-4 p-2 my-5">
+        <div class="w-[350px] bg-white p-2 rounded-lg shadow-md flex flex-col gap-2">
+            <img src="./assets/AirSeT.png" alt="3d model" class="w-full h-[200px] rounded-lg object-cover" />
+            <h4 class="text-lg font-bold text-gray-800">SM AirSeT: Critical & Industrial Facilities</h4>
+            <p class="text-sm text-gray-600  truncate-lines-3">SM AirSeT for Critical Facilities, Data Centers & Industries. Green and
+                digital modular air-insulated Medium Voltage switchgear for secondary distribution networks and
+                installations for commercial and industrial buildings sectors and utilities. It features future-proof
+                green design combining pure air and vacuum technology to replace greenhouse or alternative gas.
+
+            </p>
+            <a class="bg-blue-400 text-white px-2 py-2 rounded-md w-full text-center"
+                href="./sm-airset-critical-industrial-facilities.html">
+                View</a>
+        </div>
+        <div class="w-[350px] bg-white p-2 rounded-lg shadow-md flex flex-col gap-2">
+            <img src="./assets/SureSeT.png" alt="3d model" class="w-full h-[200px] rounded-lg object-cover" />
+            <h4 class="text-lg font-bold text-gray-800">SureSeT: Primary Air-Insulated Switchgear</h4>
+            <p class="text-sm text-gray-600 truncate-lines-3">SureSeT’s compact design, integrated operation and monitoring addressing
+                increasing demand for space optimization and operational efficiency. Facility uptimes are increased as
+                natively integrated equipment health monitoring enables operators to manage impending equipment issues.
+                Technicians can remain at appropriate working distances via wireless equipment operation and monitoring.
+                Up to 15 kV, 2000 A, 40kA. Designed to IEEE C37.20.2 standard for Metal-Clad Switchgear. SquareD
+            </p>
+            <a class="bg-blue-400 text-white px-2 py-2 rounded-md w-full text-center"
+                href="./sureset-primary-air-insulated-switchgear.html">
+                View</a>
+        </div>
+
+    </div>
 </body>
+
 </html>
