@@ -22,16 +22,29 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, .3);
             border-bottom: 1px solid #efefef;
         }
-        .truncate-lines-3{
+
+        .truncate-lines-3 {
             display: -webkit-box;
             -webkit-line-clamp: 4;
-            -webkit-box-orient: vertical;  
+            -webkit-box-orient: vertical;
             overflow: hidden;
         }
-        
+
+        .card-db {
+            cursor: pointer;
+        }
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/MotionPathPlugin.min.js"></script>
 </head>
 
 <body>
@@ -43,10 +56,11 @@
     </nav>
 
     <div class="flex flex-wrap justify-center gap-4 p-2 my-5">
-        <div class="w-[350px] bg-white p-2 rounded-lg shadow-md flex flex-col gap-2">
+        <div class="card-db w-[350px] bg-white p-2 rounded-lg shadow-md flex flex-col gap-2">
             <img src="./assets/AirSeT.png" alt="3d model" class="w-full h-[200px] rounded-lg object-cover" />
             <h4 class="text-lg font-bold text-gray-800">SM AirSeT: Critical & Industrial Facilities</h4>
-            <p class="text-sm text-gray-600  truncate-lines-3">SM AirSeT for Critical Facilities, Data Centers & Industries. Green and
+            <p class="text-sm text-gray-600  truncate-lines-3">SM AirSeT for Critical Facilities, Data Centers &
+                Industries. Green and
                 digital modular air-insulated Medium Voltage switchgear for secondary distribution networks and
                 installations for commercial and industrial buildings sectors and utilities. It features future-proof
                 green design combining pure air and vacuum technology to replace greenhouse or alternative gas.
@@ -56,10 +70,11 @@
                 href="./sm-airset-critical-industrial-facilities.html">
                 View</a>
         </div>
-        <div class="w-[350px] bg-white p-2 rounded-lg shadow-md flex flex-col gap-2">
+        <div class="card-db w-[350px] bg-white p-2 rounded-lg shadow-md flex flex-col gap-2">
             <img src="./assets/SureSeT.png" alt="3d model" class="w-full h-[200px] rounded-lg object-cover" />
             <h4 class="text-lg font-bold text-gray-800">SureSeT: Primary Air-Insulated Switchgear</h4>
-            <p class="text-sm text-gray-600 truncate-lines-3">SureSeT’s compact design, integrated operation and monitoring addressing
+            <p class="text-sm text-gray-600 truncate-lines-3">SureSeT’s compact design, integrated operation and
+                monitoring addressing
                 increasing demand for space optimization and operational efficiency. Facility uptimes are increased as
                 natively integrated equipment health monitoring enables operators to manage impending equipment issues.
                 Technicians can remain at appropriate working distances via wireless equipment operation and monitoring.
@@ -69,53 +84,147 @@
                 href="./sureset-primary-air-insulated-switchgear.html">
                 View</a>
         </div>
-        <div class="w-[350px] bg-white p-2 rounded-lg shadow-md flex flex-col gap-2">
+        <div class="card-db w-[350px] bg-white p-2 rounded-lg shadow-md flex flex-col gap-2">
             <img src="./assets/Endress.png" alt="3d model" class="w-full h-[200px] rounded-lg object-cover" />
             <h4 class="text-lg font-bold text-gray-800">Virtual Reality (VR) experience for Endress & Hauser</h4>
-            <p class="text-sm text-gray-600 truncate-lines-3">BizConnect developed a state-of-the-art Virtual Reality (VR) experience for Endress & Hauser, where their products were showcased in action. Designed to provide a real-world feel, the VR simulation allowed users to explore and interact with the products' functionalities in realistic environments
+            <p class="text-sm text-gray-600 truncate-lines-3">BizConnect developed a state-of-the-art Virtual Reality
+                (VR) experience for Endress & Hauser, where their products were showcased in action. Designed to provide
+                a real-world feel, the VR simulation allowed users to explore and interact with the products'
+                functionalities in realistic environments
             </p>
-            <a class="bg-blue-400 text-white px-2 py-2 rounded-md w-full text-center"
-                href="./endress.html">
+            <a class="bg-blue-400 text-white px-2 py-2 rounded-md w-full text-center" href="./endress.html">
                 View</a>
         </div>
-        <div class="w-[350px] bg-white p-2 rounded-lg shadow-md flex flex-col gap-2">
+        <div class="card-db w-[350px] bg-white p-2 rounded-lg shadow-md flex flex-col gap-2">
             <img src="./assets/Staging.png" alt="3d model" class="w-full h-[200px] rounded-lg object-cover" />
             <h4 class="text-lg font-bold text-gray-800">Designs that bring ideas</h4>
-            <p class="text-sm text-gray-600 truncate-lines-3">BizConnect created an innovative 3D virtual environment, accessible. This platform offers an interactive and immersive experience, showcasing customized spaces and designs that bring ideas to life. The 3D creation allows clients to explore and visualize any setups - office or home, exhibitions, and more in a dynamic and engaging way, enhancing planning and decision-making processes faster
+            <p class="text-sm text-gray-600 truncate-lines-3">BizConnect created an innovative 3D virtual environment,
+                accessible. This platform offers an interactive and immersive experience, showcasing customized spaces
+                and designs that bring ideas to life. The 3D creation allows clients to explore and visualize any setups
+                - office or home, exhibitions, and more in a dynamic and engaging way, enhancing planning and
+                decision-making processes faster
             </p>
-            <a class="bg-blue-400 text-white px-2 py-2 rounded-md w-full text-center"
-                href="./staging.html">
+            <a class="bg-blue-400 text-white px-2 py-2 rounded-md w-full text-center" href="./staging.html">
                 View</a>
         </div>
-        <div class="w-[350px] bg-white p-2 rounded-lg shadow-md flex flex-col gap-2">
+        <div class="card-db w-[350px] bg-white p-2 rounded-lg shadow-md flex flex-col gap-2">
             <img src="./assets/House.png" alt="3d model" class="w-full h-[200px] rounded-lg object-cover" />
             <h4 class="text-lg font-bold text-gray-800">Immersive 3D House Tour</h4>
-            <p class="text-sm text-gray-600 truncate-lines-3">BizConnect designed an immersive 3D virtual house tour. This interactive experience allows users to explore every detail of the property as if they were walking through it in person. The realistic and dynamic design helps clients visualize spaces effectively, making it an ideal tool for real estate showcases and virtual property tours
+            <p class="text-sm text-gray-600 truncate-lines-3">BizConnect designed an immersive 3D virtual house tour.
+                This interactive experience allows users to explore every detail of the property as if they were walking
+                through it in person. The realistic and dynamic design helps clients visualize spaces effectively,
+                making it an ideal tool for real estate showcases and virtual property tours
             </p>
-            <a class="bg-blue-400 text-white px-2 py-2 rounded-md w-full text-center"
-                href="./house.html">
+            <a class="bg-blue-400 text-white px-2 py-2 rounded-md w-full text-center" href="./house.html">
                 View</a>
         </div>
-        <div class="w-[350px] bg-white p-2 rounded-lg shadow-md flex flex-col gap-2">
+        <div class="card-db w-[350px] bg-white p-2 rounded-lg shadow-md flex flex-col gap-2">
             <img src="./assets/Fan.png" alt="3d model" class="w-full h-[200px] rounded-lg object-cover" />
             <h4 class="text-lg font-bold text-gray-800">Immersive 3D Product Showcase</h4>
-            <p class="text-sm text-gray-600 truncate-lines-3">BizConnect created an interactive 3D product showcase for a fan. This immersive experience allows users to explore the product in detail, both inside and out, providing a comprehensive understanding of its features and functionality. Ideal for customer interactions, this method can be effectively utilized at shows, exhibitions, and B2B meetings on large touchscreens or one-on-one demos on iPads. Additionally, it can be hosted on websites, enabling customers to take self-guided product demos at their convenience
+            <p class="text-sm text-gray-600 truncate-lines-3">BizConnect created an interactive 3D product showcase for
+                a fan. This immersive experience allows users to explore the product in detail, both inside and out,
+                providing a comprehensive understanding of its features and functionality. Ideal for customer
+                interactions, this method can be effectively utilized at shows, exhibitions, and B2B meetings on large
+                touchscreens or one-on-one demos on iPads. Additionally, it can be hosted on websites, enabling
+                customers to take self-guided product demos at their convenience
             </p>
-            <a class="bg-blue-400 text-white px-2 py-2 rounded-md w-full text-center"
-                href="./fan.html">
+            <a class="bg-blue-400 text-white px-2 py-2 rounded-md w-full text-center" href="./fan.html">
                 View</a>
         </div>
-        <div class="w-[350px] bg-white p-2 rounded-lg shadow-md flex flex-col gap-2">
-            <img src="./assets/Meter-Skid.png" alt="3d model" class="w-full h-[200px] rounded-lg object-cover" />
-            <h4 class="text-lg font-bold text-gray-800">Meter Skid</h4>
-            <p class="text-sm text-gray-600 truncate-lines-3">Demo Description here
+        <div class="card-db w-[350px] bg-white p-2 rounded-lg shadow-md flex flex-col gap-2">
+            <img src="./assets/Shoe.png" alt="3d model" class="w-full h-[200px] rounded-lg object-cover" />
+            <h4 class="text-lg font-bold text-gray-800">Augmented Reality Shoe </h4>
+            <p class="text-sm text-gray-600 truncate-lines-3">BizConnect has developed an advanced Augmented Reality
+                tool for a prominent shoe-making client, elevating the way customers interact with footwear. This
+                innovative solution allows users to visualize and try on shoes in real-time, ensuring they find the
+                perfect fit from the comfort of their homes.
+                By utilizing cutting-edge foot scanning technology, customers can see how different styles and sizes
+                look on their feet instantly
             </p>
-            <a class="bg-blue-400 text-white px-2 py-2 rounded-md w-full text-center"
-                href="./meter.html">
+            <a class="bg-blue-400 text-white px-2 py-2 rounded-md w-full text-center" onclick="openModal('Shoe')">
                 View</a>
         </div>
-
+        <div class="card-db w-[350px] bg-white p-2 rounded-lg shadow-md flex flex-col gap-2">
+            <img src="./assets/CampusVideo.png" alt="3d model" class="w-full h-[200px] rounded-lg object-cover" />
+            <h4 class="text-lg font-bold text-gray-800">Take a college tour (Video)
+            </h4>
+            <p class="text-sm text-gray-600 truncate-lines-3">Experience the Future of Education: BizConnect's Virtual
+                University, where students can immerse themselves in a fully interactive and immersive learning
+                experience. Register for classes, attend lectures, ask questions, and collaborate with peers in groups.
+                Explore virtual labs, recreational areas, and libraries with your own library card
+            </p>
+            <a class="bg-blue-400 text-white px-2 py-2 rounded-md w-full text-center" onclick="openModal('Campus')">
+                View</a>
+        </div>
+        <div class="card-db w-[350px] bg-white p-2 rounded-lg shadow-md flex flex-col gap-2">
+            <img src="./assets/CampusVideo.png" alt="3d model" class="w-full h-[200px] rounded-lg object-cover" />
+            <h4 class="text-lg font-bold text-gray-800">Take a college tour (3D) </h4>
+            <p class="text-sm text-gray-600 truncate-lines-3">Experience the Future of Education: BizConnect's Virtual
+                University, where students can immerse themselves in a fully interactive and immersive learning
+                experience. Register for classes, attend lectures, ask questions, and collaborate with peers in groups.
+                Explore virtual labs, recreational areas, and libraries with your own library card
+            </p>
+            <a class="bg-blue-400 text-white px-2 py-2 rounded-md w-full text-center" href="/campus.html">
+                View</a>
+        </div>
     </div>
+
+    <div class="modal fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+        <div class="bg-white p-5 rounded-lg shadow-lg w-[90%] max-w-[700px]">
+            <h2 class="text-2xl font-bold mb-4">Video Showcase</h2>
+            <div id="video-container">
+
+            </div>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-md close-modal mt-1">Close</button>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.querySelector('.modal');
+        const closeModalButton = document.querySelector('.close-modal');
+
+        closeModalButton.addEventListener('click', () => {
+            modal.classList.add('hidden');
+        });
+
+        // Example function to open the modal
+        function openModal(name) {
+            modal.classList.remove('hidden');
+            if (name === 'Shoe') {
+                document.getElementById('video-container').innerHTML = `    <video autoplay muted class="h-[400px] w-full aspect-16/9">
+                <source src="https://dq4577cj31esb.cloudfront.net/Shoe_AR.mp4" type="video/mp4">
+            </video>`;
+            } else {
+                document.getElementById('video-container').innerHTML = `  <div class="h-[400px] w-full aspect-16/9">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/MiITmJA8yd0"
+                    title="STL Campus I BizConnect Virtual Platform - A Virtual, SaaS-based Plug &amp; Play Metaverse platform."
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>`;
+            }
+        }
+    </script>
+    <script>
+        const cards = document.querySelectorAll('.card-db');
+
+        // Add event listeners for hover
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                const description = card.querySelector('p'); // Select the paragraph inside the card
+                if (description) {
+                    description.classList.remove('truncate-lines-3');
+                }
+            });
+
+            card.addEventListener('mouseleave', () => {
+                const description = card.querySelector('p'); // Select the paragraph inside the card
+                if (description) {
+                    description.classList.add('truncate-lines-3');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
