@@ -179,6 +179,33 @@
         </div>
     </div>
 
+
+    <script>
+        // Wait for the DOM to fully load
+        document.addEventListener("DOMContentLoaded", () => {
+          // GSAP animation for Navbar
+          gsap.from(".navbar-shadow", {
+            duration: 1, 
+            opacity: 0, 
+            y: -50, 
+            ease: "power2.out"
+          });
+      
+          // GSAP stagger animation for cards
+          gsap.from(".card-db", {
+            duration: 1, 
+            opacity: 0, 
+            y: 50, 
+            stagger: 0.2, 
+            ease: "power2.out"
+          });
+      
+      
+      
+        });
+      </script>
+
+
     <script>
         const modal = document.querySelector('.modal');
         const closeModalButton = document.querySelector('.close-modal');
